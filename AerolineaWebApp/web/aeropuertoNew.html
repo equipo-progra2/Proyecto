@@ -9,9 +9,9 @@
         <h1>Nuevo aeropuerto</h1>
         <p>Para agregar un aeropuerto, por favor, complete los siguientes campos:</p><br>
         
-        <form>
+        <form id="myform" name="myform" action="AeropuertoServlet" method="get" >
             <label>Nombre:</label><br>
-            <input type="text" id="name" name="name"/>
+            <input type="text" id="name" name="nombre"/>
             <br><br>
             
             <label>Pais:</label><br>
@@ -19,7 +19,7 @@
             <br><br>
             
             <label>Ciudad:</label><br>
-            <input type="text" id="city" name="city"/>
+            <input type="text" id="city" name="ciudad"/>
             <br><br>
                         
             <input type="submit" id="mysubmit" name="mysubmit" value="Agregar"/>
