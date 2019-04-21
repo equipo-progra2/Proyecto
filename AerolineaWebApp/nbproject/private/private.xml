@@ -3,13 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/src/java/benja/aerolineawebapp/objects/VueloObj.java</file>
-            <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/src/java/benja/aerolineawebapp/logic/VueloLogic.java</file>
-            <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/src/java/benja/aerolineawebapp/objects/AeropuertoObj.java</file>
+            <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/web/aeropuertoUpdateForm.jsp</file>
             <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/src/java/benja/aerolineawebapp/logic/AeropuertoLogic.java</file>
-            <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/src/java/benja/aerolineawebapp/servlets/VueloServlet.java</file>
-            <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/web/vueloForm.jsp</file>
-            <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/web/index.html</file>
             <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/web/aeropuertoForm.jsp</file>
             <file>file:/C:/Users/bmyn/Documents/Benjamin/ESEN/Tercero/Ciclo%201/Programacion%202/Proyecto/AerolineaWebApp/src/java/benja/aerolineawebapp/servlets/AeropuertoServlet.java</file>
         </group>

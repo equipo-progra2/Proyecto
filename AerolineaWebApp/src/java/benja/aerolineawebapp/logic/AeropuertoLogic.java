@@ -130,7 +130,7 @@ public class AeropuertoLogic extends Logic
     //Metodo 6
     public int updateAeropuertoRows(int p_iId, String p_strNombre, String p_strPais, String p_strCiudad) 
     {
-        //update aerolinea.aeropuerto set name = 'fabricio',age = 25 where id = 9;
+        
         DatabaseX database = getDatabase();
         String strSql = "UPDATE aerolinea.aeropuerto "
                 + "SET nombre = '"+p_strNombre+"',pais = '"+p_strPais+"',ciudad = '"+p_strCiudad+"'"
