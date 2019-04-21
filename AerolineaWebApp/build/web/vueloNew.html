@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nuevo vuelo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Nuevo vuelo</h1>
+        <p>Para agregar un nuevo vuelo, por favor, complete los siguientes campos:</p><br>
+
+        <form id="myform" name="myform" action="VueloServlet" method="get">
+            <label>IdAvion:</label><br>
+            <input type="text" id="idavion" name="idavion"/>
+            <br><br>
+
+            <label>Fecha de Partida:</label><br>
+            <input type="text" id="fechapartida" name="fechapartida"/>
+            <br><br>
+            
+            <label>Hora de Partida:</label><br>
+            <input type="text" id="horapartida" name="horapartida"/>
+            <br><br>
+            
+            <label>Id Aeropuerto de Partida:</label><br>
+            <input type="text" id="aeropuertopartida" name="aeropuertopartida"/>
+            <br><br>
+            
+            <label>Fecha de Llegada:</label><br>
+            <input type="text" id="fechallegada" name="fechallegada"/>
+            <br><br>
+
+            <label>Hora de Llegada:</label><br>
+            <input type="text" id="horallegada" name="horallegada"/>
+            <br><br>
+            
+            <label>Id Aeropuerto de Destino:</label><br>
+            <input type="text" id="aeropuertodestino" name="aeropuertodestino"/>
+            <br><br>
+            
+            <label>Precio de Adulto:</label><br>
+            <input type="text" id="precioadulto" name="precioadulto"/>
+            <br><br>
+            
+            <label>Precio de Nino:</label><br>
+            <input type="text" id="precionino" name="precionino"/>
+            <br><br>
+            
+            <label>Precio de Infante:</label><br>
+            <input type="text" id="precioinfante" name="precioinfante"/>
+            <br><br>
+            
+            <input type="submit" id="mysubmit" name="mysubmit" value="Agregar"/>
+            <input type="hidden" id="formid" name="formid" value="1" />
+
+        </form>
+    </body>
+</html>
