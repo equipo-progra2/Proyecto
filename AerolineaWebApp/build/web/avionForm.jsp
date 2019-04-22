@@ -1,6 +1,6 @@
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="soto.avionwebapp.objects.AvionObj"%>
+<%@page import="benja.aerolineawebapp.objects.AvionObj"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

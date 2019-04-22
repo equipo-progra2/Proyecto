@@ -28,7 +28,7 @@ public class AvionServlet extends HttpServlet
             if(strFormId.equals("1"))
             {
                 //obteniendo parametros
-                String strNombre = request.getParameter("nombre");
+                String strNombre = request.getParameter("name");
                 String strModelo = request.getParameter("model");
                 String strMarca = request.getParameter("mark");
                 String strCapacidad = request.getParameter("capacity");
