@@ -8,7 +8,7 @@
     </head>
     <%
         VueloObj VVuelo = 
-                (VueloObj)request.getSession().getAttribute("aeropuerto");
+                (VueloObj)request.getSession().getAttribute("vuelo");
         
     %>
     <body>
@@ -17,9 +17,8 @@
         
         <form id="myform" name="myform" action="VueloServlet" method="get">
             <label>Id:</label><br>
-            <input type="number" id="nonId" name="nonId" value="<%= VVuelo.getId() %>" disabled/>
+            <input type="number" id="nonId" name="nonId" value="<%= VVuelo.getId() %>" disabled />
             <br><br>
-            
             
             <label>IdAvion:</label><br>
             <input type="text" id="idavion" name="idavion" value="<%= VVuelo.getIdAvion() %>" />

@@ -21,7 +21,7 @@ public class VueloLogic extends Logic
         String strSql = "INSERT INTO aerolinea.vuelo (id,idAvion,fechaPartida,"
                 + "horaPartida,idAeropuertoPartida,"
                 + "fechaLlegada,horaLlegada,idAeropuertoDestino,"
-                + "PrecioAdulto,PrecioNiño,PrecioInfante)" 
+                + "PrecioAdulto,PrecioNino,PrecioInfante)" 
                 + "VALUES (0,"+p_iIdAvion+",'"+p_strFechaPartida+"',"
                 + "'"+p_strHoraPartida+"',"+p_iIdAeropuertoPartida+",'"+p_strFechaLlegada+"',"
                 + "'"+p_strHoraLlegada+"',"+p_iIdAeropuertoDestino+","+p_iPrecioAdulto+","+p_iPrecioNino+","+p_iPrecioInfante+"); ";
@@ -38,7 +38,7 @@ public class VueloLogic extends Logic
         String strSql = "INSERT INTO aerolinea.vuelo (id,idAvion,fechaPartida,"
                 + "horaPartida,idAeropuertoPartida,"
                 + "fechaLlegada,horaLlegada,idAeropuertoDestino,"
-                + "PrecioAdulto,PrecioNiño,PrecioInfante)" 
+                + "PrecioAdulto,PrecioNino,PrecioInfante)" 
                 + "VALUES (0,"+p_iIdAvion+",'"+p_strFechaPartida+"',"
                 + "'"+p_strHoraPartida+"',"+p_iIdAeropuertoPartida+",'"+p_strFechaLlegada+"',"
                 + "'"+p_strHoraLlegada+"',"+p_iIdAeropuertoDestino+","+p_iPrecioAdulto+","+p_iPrecioNino+","+p_iPrecioInfante+");";
@@ -172,13 +172,13 @@ public class VueloLogic extends Logic
     {
 
         DatabaseX database = getDatabase();
-        String strSql = "UPDATE aerolinea.vuelo" +
+        String strSql = "UPDATE aerolinea.vuelo " +
                         "SET idAvion = "+p_iIdAvion+",fechaPartida = '"+p_strFechaPartida+"'," +
                         "horaPartida = '"+p_strHoraPartida+"',idAeropuertoPartida = "+p_iIdAeropuertoPartida+"," +
                         "fechaLlegada = '"+p_strFechaLlegada+"',horaLlegada = '"+p_strHoraLlegada+"',"
                         + "idAeropuertoDestino = "+p_iIdAeropuertoDestino+"," +
-                        "PrecioAdulto = "+p_iPrecioAdulto+",PrecioNiño = "+p_iPrecioNino+",PrecioInfante = "+p_iPrecioInfante+"" +
-                        "WHERE id = "+p_iId+"; ";
+                        "PrecioAdulto = "+p_iPrecioAdulto+",PrecioNino = "+p_iPrecioNino+",PrecioInfante = "+p_iPrecioInfante+"" +
+                        " WHERE id = "+p_iId+"; ";
         System.out.println(strSql);
         int iRows = database.executeNonQueryRows(strSql);
         return iRows;

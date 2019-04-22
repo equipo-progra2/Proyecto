@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nuevo avión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Nuevo avión</h1>
+        <br>
+        
+        <form id="myform" name="myform" action="AvionServlet" method="get">
+            <label>Nombre:</label><br>
+            <input type="text" id="name" name="name"/>
+            <br><br>
+            
+            <label>Modelo:</label><br>
+            <input type="text" id="model" name="model"/>
+            <br><br>
+            
+            <label>Marca:</label><br>
+            <input type="text" id="mark" name="mark"/>
+            <br><br>
+            
+            <label>Capacidad:</label><br>
+            <input type="number" id="capacity" name="capacity"/>
+            <br><br>
+                        
+            <input type="submit" id="mysubmit" name="mysubmit" value="Agregar"/>
+            <input type="hidden" id="formid" name="formid" value="1" />
+        </form>
+        
+    </body>
+</html>

@@ -94,7 +94,7 @@ public class VueloServlet extends HttpServlet {
                 VueloObj VVuelos = CLogic.getVuelosById(iId);
                 
                 //enviar a frontend
-                request.getSession().setAttribute("vuelos", VVuelos);
+                request.getSession().setAttribute("vuelo", VVuelos);
                 response.sendRedirect("vueloUpdateForm.jsp");
             }
             
