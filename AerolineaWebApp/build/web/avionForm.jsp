@@ -2,6 +2,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="benja.aerolineawebapp.objects.AvionObj"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<link href="CSS/newcss2.css" rel="stylesheet" type="text/css"/>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,6 +18,8 @@
     <body>
         <h1>Avion</h1>
         <br>
+            <img src="plane.png" alt="plane" width="120" height="120" align="right"/>
+        
         <a href="NewAvion.html">Agregar Aviones</a>
         <br><br>
         <table>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Estado de vuelo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/indexStyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="navbar-bacground">
+            <nav class="navbar  navbar-expand-md navbar-dark bg-dark" style="background-color:#808080d;" >
+            <a class="navbar-brand" href="#">Epsilon Airlines</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="AeropuertoServlet?formid=1">Comprar Boletos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="EstadoDeVuelos.html">Estado de vuelos</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Tu vuelo al mejor precio
+              </span>
+            </div>
+          </nav>
+        </div>   
+       
+        <br><br>
+        
+        <div class="container">
+           
+           <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Estado de Vuelos</h1>
+              <p class="lead">Accede y ve en tiempo real el estado de tu vuelo</p>
+            </div>
+          </div>
+            
+           
+            
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Ruta</h5>
+                    <p class="card-text">Descripcion de ruta</p>
+                    <a href="AeropuertoServlet?formid=5" class="btn btn-primary">Ver Ruta</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Codigo</h5>
+                    <p class="card-text">Descripcion de codigo</p>
+                    <a href="AeropuertoServlet?formid=6" class="btn btn-primary">Ver Codigo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <br><br><br>
+        
+        
+        <footer style="background-color:  #191D26">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-9">
+                       <p class="colorp" style="color: white">Epsilon Airlines - Derechos Reservados</p>
+                   </div>
+                   <div class="col-1">
+                        <ul class="list-inline text-right">
+                          <li><a href="index.html">Inicio</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-1">
+                        <ul class="list-inline text-right" style="color: white">
+                          <li><a href="#">Registrate</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-1">
+                        <ul class="list-inline text-right">
+                          <li><a href="#">Contactamos</a></li>
+                       </ul>
+                   </div>
+               </div>   
+            </div> 
+        </footer>
+       <script src="js/jquery.js" ></script>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </body>
+</html>

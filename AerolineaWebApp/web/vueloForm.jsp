@@ -15,10 +15,14 @@
         Iterator<VueloObj> iteArray = CArray.iterator();
     %>
     
+    <link href="CSS/newcss.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/button.css" rel="stylesheet" type="text/css"/>
+    <img src="plane.png" alt="plane" width="120" height="120" align="right"/>
+    
     <body>
        <h1>Vuelo</h1>
         <br>
-        <a href="vueloNew.html">Agregar Vuelo</a>
+        <a href="VueloServlet?formid=6">Agregar Vuelo</a>
         <br><br>
         <table>
         <tr>
@@ -52,7 +56,7 @@
                     <td><%= CTemp.getHoraLlegada() %></td>
                     <td><%= CTemp.getIdAeropuertoDestino() %></td>
                     <td><%= CTemp.getPrecioAdulto() %></td>
-                    <td><%= CTemp.getPrecioNino() %></td>
+                    <td><%= CTemp.getPrecioNiño() %></td>
                     <td><%= CTemp.getPrecioInfante() %></td>
                     
                     <td>

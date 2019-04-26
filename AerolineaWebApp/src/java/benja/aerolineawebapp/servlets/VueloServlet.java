@@ -1,6 +1,10 @@
 package benja.aerolineawebapp.servlets;
 
+import benja.aerolineawebapp.logic.AeropuertoLogic;
+import benja.aerolineawebapp.logic.AvionLogic;
 import benja.aerolineawebapp.logic.VueloLogic;
+import benja.aerolineawebapp.objects.AeropuertoObj;
+import benja.aerolineawebapp.objects.AvionObj;
 import benja.aerolineawebapp.objects.VueloObj;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -132,6 +136,21 @@ public class VueloServlet extends HttpServlet {
                 response.sendRedirect("genericMessage.jsp");
                 
             }
+            if(strFormId.equals("6"))
+            {
+                //load all dropdowns
+                AeropuertoLogic AAeropuertoLogic = new AeropuertoLogic();
+                ArrayList<AeropuertoObj> AAeropuertoArray = AAeropuertoLogic.getAllAeropuertos();
+                
+                AvionLogic AavionLogic = new AvionLogic();
+                ArrayList<AvionObj> AvionFromArray = 
+                        AavionLogic.getAllAviones();
+
+                
+                request.getSession().setAttribute("aeropuertos", AAeropuertoArray);
+                request.getSession().setAttribute("aviones", AvionFromArray);
+                response.sendRedirect("vueloNew.jsp");
+            }       
         }
     }
 

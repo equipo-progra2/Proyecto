@@ -11,7 +11,7 @@ public class VueloObj
     private String m_strHoraLlegada;
     private int m_iIdAeropuertoDestino;    
     private int m_iPrecioAdulto;
-    private int m_iPrecioNino;
+    private int m_iPrecioNiño;
     private int m_iPrecioInfante;
    
     //Metodo constructor
@@ -20,7 +20,7 @@ public class VueloObj
             String p_strHoraPartida, int p_iIdAeropuertoPartida, 
             String p_strFechaLlegada, String p_strHoraLlegada, 
             int p_iIdAeropuertoDestino, int p_iPrecioAdulto, 
-            int p_iPrecioNino, int p_iPrecioInfante) 
+            int p_iPrecioNiño, int p_iPrecioInfante) 
     {
         setId(p_iId);
         setIdAvion(p_iIdAvion);
@@ -31,7 +31,7 @@ public class VueloObj
         setHoraLlegada(p_strHoraLlegada);
         setIdAeropuertoDestino(p_iIdAeropuertoDestino);
         setPrecioAdulto(p_iPrecioAdulto);
-        setPrecioNino(p_iPrecioNino);
+        setPrecioNiño(p_iPrecioNiño);
         setPrecioInfante(p_iPrecioInfante);
     }
     //Getters and setters
@@ -126,14 +126,14 @@ public class VueloObj
         m_iPrecioAdulto = p_iPrecioAdulto;
     }
 
-    public int getPrecioNino() 
+    public int getPrecioNiño() 
     {
-        return m_iPrecioNino;
+        return m_iPrecioNiño;
     }
 
-    private void setPrecioNino(int p_iPrecioNino) 
+    private void setPrecioNiño(int p_iPrecioNiño) 
     {
-        m_iPrecioNino = p_iPrecioNino;
+        m_iPrecioNiño = p_iPrecioNiño;
     }
 
     public int getPrecioInfante() 

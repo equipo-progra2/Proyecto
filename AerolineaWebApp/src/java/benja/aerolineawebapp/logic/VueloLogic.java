@@ -21,7 +21,7 @@ public class VueloLogic extends Logic
         String strSql = "INSERT INTO aerolinea.vuelo (id,idAvion,fechaPartida,"
                 + "horaPartida,idAeropuertoPartida,"
                 + "fechaLlegada,horaLlegada,idAeropuertoDestino,"
-                + "PrecioAdulto,PrecioNino,PrecioInfante)" 
+                + "PrecioAdulto,PrecioNiño,PrecioInfante)" 
                 + "VALUES (0,"+p_iIdAvion+",'"+p_strFechaPartida+"',"
                 + "'"+p_strHoraPartida+"',"+p_iIdAeropuertoPartida+",'"+p_strFechaLlegada+"',"
                 + "'"+p_strHoraLlegada+"',"+p_iIdAeropuertoDestino+","+p_iPrecioAdulto+","+p_iPrecioNino+","+p_iPrecioInfante+"); ";
@@ -38,7 +38,7 @@ public class VueloLogic extends Logic
         String strSql = "INSERT INTO aerolinea.vuelo (id,idAvion,fechaPartida,"
                 + "horaPartida,idAeropuertoPartida,"
                 + "fechaLlegada,horaLlegada,idAeropuertoDestino,"
-                + "PrecioAdulto,PrecioNino,PrecioInfante)" 
+                + "PrecioAdulto,PrecioNiño,PrecioInfante)" 
                 + "VALUES (0,"+p_iIdAvion+",'"+p_strFechaPartida+"',"
                 + "'"+p_strHoraPartida+"',"+p_iIdAeropuertoPartida+",'"+p_strFechaLlegada+"',"
                 + "'"+p_strHoraLlegada+"',"+p_iIdAeropuertoDestino+","+p_iPrecioAdulto+","+p_iPrecioNino+","+p_iPrecioInfante+");";
@@ -86,7 +86,7 @@ public class VueloLogic extends Logic
                     strHoraLlegada= CResult.getString("horaLlegada");
                     iIdAeropuertoDestino = CResult.getInt("idAeropuertoDestino");
                     iPrecioAdulto = CResult.getInt("PrecioAdulto");
-                    iPrecioNino = CResult.getInt("PrecioNino");
+                    iPrecioNino = CResult.getInt("PrecioNiño");
                     iPrecioInfante = CResult.getInt("PrecioInfante");
                     
                     CTemp = new VueloObj(iId, iIdAvion, strFechaPartida, strHoraPartida,
@@ -147,7 +147,7 @@ public class VueloLogic extends Logic
                     strHoraLlegada = CResult.getString("horaLlegada");
                     iIdAeropuertoDestino = CResult.getInt("idAeropuertoDestino");
                     iPrecioAdulto = CResult.getInt("PrecioAdulto");
-                    iPrecioNino = CResult.getInt("PrecioNino");
+                    iPrecioNino = CResult.getInt("PrecioNiño");
                     iPrecioInfante = CResult.getInt("PrecioInfante");
                     
                     CTemp = new VueloObj(iId, iIdAvion, strFechaPartida, strHoraPartida, iIdAeropuertoPartida,
@@ -177,7 +177,7 @@ public class VueloLogic extends Logic
                         "horaPartida = '"+p_strHoraPartida+"',idAeropuertoPartida = "+p_iIdAeropuertoPartida+"," +
                         "fechaLlegada = '"+p_strFechaLlegada+"',horaLlegada = '"+p_strHoraLlegada+"',"
                         + "idAeropuertoDestino = "+p_iIdAeropuertoDestino+"," +
-                        "PrecioAdulto = "+p_iPrecioAdulto+",PrecioNino = "+p_iPrecioNino+",PrecioInfante = "+p_iPrecioInfante+"" +
+                        "PrecioAdulto = "+p_iPrecioAdulto+",PrecioNiño = "+p_iPrecioNino+",PrecioInfante = "+p_iPrecioInfante+"" +
                         " WHERE id = "+p_iId+"; ";
         System.out.println(strSql);
         int iRows = database.executeNonQueryRows(strSql);

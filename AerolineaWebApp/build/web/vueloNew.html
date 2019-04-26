@@ -4,7 +4,14 @@
         <title>Nuevo vuelo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Scripts/jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.validate.js" type="text/javascript"></script>
+        <script src="Scripts/additional-methods.js" type="text/javascript"></script>
+        <script src="Scripts/NewVueloScript.js" type="text/javascript"></script>
+        <link href="CSS/newcssvuelo3.css" rel="stylesheet" type="text/css"/>
+        
     </head>
+   
     <body>
         <h1>Nuevo vuelo</h1>
         <p>Para agregar un nuevo vuelo, por favor, complete los siguientes campos:</p><br>
@@ -15,39 +22,39 @@
             <br><br>
 
             <label>Fecha de Partida:</label><br>
-            <input type="text" id="fechapartida" name="fechapartida"/>
+            <input type="date" id="fechapartida" name="fechapartida"/>
             <br><br>
             
             <label>Hora de Partida:</label><br>
-            <input type="text" id="horapartida" name="horapartida"/>
+            <input type="time" id="horapartida" name="horapartida"/>
             <br><br>
             
             <label>Id Aeropuerto de Partida:</label><br>
-            <input type="text" id="aeropuertopartida" name="aeropuertopartida"/>
+            <input type="number" id="aeropuertopartida" name="aeropuertopartida"/>
             <br><br>
             
             <label>Fecha de Llegada:</label><br>
-            <input type="text" id="fechallegada" name="fechallegada"/>
+            <input type="date" id="fechallegada" name="fechallegada"/>
             <br><br>
 
             <label>Hora de Llegada:</label><br>
-            <input type="text" id="horallegada" name="horallegada"/>
+            <input type="time" id="horallegada" name="horallegada"/>
             <br><br>
             
             <label>Id Aeropuerto de Destino:</label><br>
-            <input type="text" id="aeropuertodestino" name="aeropuertodestino"/>
+            <input type="number" id="aeropuertodestino" name="aeropuertodestino"/>
             <br><br>
             
             <label>Precio de Adulto:</label><br>
-            <input type="text" id="precioadulto" name="precioadulto"/>
+            <input type="number" id="precioadulto" name="precioadulto"/>
             <br><br>
             
             <label>Precio de Nino:</label><br>
-            <input type="text" id="precionino" name="precionino"/>
+            <input type="number" id="precionino" name="precionino"/>
             <br><br>
             
             <label>Precio de Infante:</label><br>
-            <input type="text" id="precioinfante" name="precioinfante"/>
+            <input type="number" id="precioinfante" name="precioinfante"/>
             <br><br>
             
             <input type="submit" id="mysubmit" name="mysubmit" value="Agregar"/>
